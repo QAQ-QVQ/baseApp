@@ -24,40 +24,93 @@ ext {
     smartRefreshLayoutVersion = "1.0.4"
 
     utilcodeVersion = "1.31.0"
+    navigationFragmentVersion = "2.1.0"
+    navigationUiVersion = "2.1.0"
+    lifecycleExtensionsVersion = "2.1.0"
+    navigationFragmentKtxVersion = "2.1.0"
+    navigationUiKtxVersion = "2.1.0"
+    coreKtxVersion = "1.1.0"
+    appcompatVersion = "1.2.0"
+    materialVersion = "1.0.0"
+    junitVersion = "4.12"
+    junitExtVersion = "1.0.0"
+    espressoVersion = "3.2.0"
+    legacyVersion = "1.0.0"
+    constraintlayoutVersion = "2.0.4"
+    vectordrawableVersion = "1.1.0"
 
     app = [
-            recyclerView                 : "com.android.support:recyclerview-v7:${recyclerViewVersion}",
-            rxjava                       : "io.reactivex.rxjava2:rxjava:${rxjava2Version}",
-            rxandroid                    : "io.reactivex.rxjava2:rxandroid:${rxandroidVersion}",
-            dagger                       : "com.google.dagger:dagger:${daggerVersion}",
-            daggerCompiler               : "com.google.dagger:dagger-compiler:${daggerVersion}",
-            glide                        : "com.github.bumptech.glide:glide:${glideVersion}",
-            glideCompiler                : "com.github.bumptech.glide:compiler:${glideVersion}",
-            buterKnife                   : "com.jakewharton:butterknife:${butterKnifeVersion}",
-            butterKnifeCompiler          : "com.jakewharton:butterknife-compiler:${butterKnifeVersion}",
-            banner                       : "com.youth.banner:banner:${bannerVersion}",
-            logger                       : "com.orhanobut:logger:${loggerVersion}",
-            baseRecyclerViewAdapterHelper: "com.github.CymChad:BaseRecyclerViewAdapterHelper:${baseRecyclerViewAdapterHelperVersion}",
-            dbflowProcessor              : "com.github.Raizlabs.DBFlow:dbflow-processor:${dbflowVersion}",
-            dbflowCore                   : "com.github.Raizlabs.DBFlow:dbflow-core:${dbflowVersion}",
-            dbflow                       : "com.github.Raizlabs.DBFlow:dbflow:${dbflowVersion}",
-            dbflowRx2                    : "com.github.Raizlabs.DBFlow:dbflow-rx2:${dbflowVersion}",
-            stetho                       : "com.facebook.stetho:stetho:${stethoVersion}",
-            smartRefreshLayout           : "com.scwang.smartrefresh:SmartRefreshLayout:${smartRefreshLayoutVersion}",
-
+//            recyclerView                 : "com.android.support:recyclerview-v7:${recyclerViewVersion}",
+//            rxjava                       : "io.reactivex.rxjava2:rxjava:${rxjava2Version}",
+//            rxandroid                    : "io.reactivex.rxjava2:rxandroid:${rxandroidVersion}",
+//            dagger                       : "com.google.dagger:dagger:${daggerVersion}",
+//            daggerCompiler               : "com.google.dagger:dagger-compiler:${daggerVersion}",
+//            glide                        : "com.github.bumptech.glide:glide:${glideVersion}",
+//            glideCompiler                : "com.github.bumptech.glide:compiler:${glideVersion}",
+//            buterKnife                   : "com.jakewharton:butterknife:${butterKnifeVersion}",
+//            butterKnifeCompiler          : "com.jakewharton:butterknife-compiler:${butterKnifeVersion}",
+//            banner                       : "com.youth.banner:banner:${bannerVersion}",
+//            logger                       : "com.orhanobut:logger:${loggerVersion}",
+//            baseRecyclerViewAdapterHelper: "com.github.CymChad:BaseRecyclerViewAdapterHelper:${baseRecyclerViewAdapterHelperVersion}",
+//            dbflowProcessor              : "com.github.Raizlabs.DBFlow:dbflow-processor:${dbflowVersion}",
+//            dbflowCore                   : "com.github.Raizlabs.DBFlow:dbflow-core:${dbflowVersion}",
+//            dbflow                       : "com.github.Raizlabs.DBFlow:dbflow:${dbflowVersion}",
+//            dbflowRx2                    : "com.github.Raizlabs.DBFlow:dbflow-rx2:${dbflowVersion}",
+//            stetho                       : "com.facebook.stetho:stetho:${stethoVersion}",
+//            smartRefreshLayout           : "com.scwang.smartrefresh:SmartRefreshLayout:${smartRefreshLayoutVersion}",
+            navigationFragment           : "androidx.navigation:navigation-fragment:${navigationFragmentVersion}",
+            navigationUi                 : "androidx.navigation:navigation-ui:${navigationUiVersion}",
+            lifecycleExtensions          : "androidx.lifecycle:lifecycle-extensions:${lifecycleExtensionsVersion}",
+            navigationFragmentKtx        : "androidx.navigation:navigation-fragment-ktx:${navigationFragmentKtxVersion}",
+            navigationUiKtx              : "androidx.navigation:navigation-ui-ktx:${navigationUiKtxVersion}",
+            coreKtx                      : "androidx.core:core-ktx:${coreKtxVersion}",
+            appcompat                    : "androidx.appcompat:appcompat:${appcompatVersion}",
+            material                     : "com.google.android.material:material:${materialVersion}",
+            junit                        : "junit:junit:${junitVersion}",
+            junitExt                     : "androidx.test.ext:junit:${junitExtVersion}",
+            espresso                     : "androidx.test.espresso:espresso-core:${espressoVersion}",
+            constraintlayout             : "androidx.constraintlayout:constraintlayout:${constraintlayoutVersion}",
+            vectordrawable               : "androidx.vectordrawable:vectordrawable:${vectordrawableVersion}",
     ]
 
     tools = [
-            rxjava         : "io.reactivex.rxjava2:rxjava:${rxjava2Version}",
-            rxandroid      : "io.reactivex.rxjava2:rxandroid:${rxandroidVersion}",
-            dagger         : "com.google.dagger:dagger:${daggerVersion}",
-            daggerCompiler : "com.google.dagger:dagger-compiler:${daggerVersion}",
-            logger         : "com.orhanobut:logger:${loggerVersion}",
-            dbflowProcessor: "com.github.Raizlabs.DBFlow:dbflow-processor:${dbflowVersion}",
-            dbflowCore     : "com.github.Raizlabs.DBFlow:dbflow-core:${dbflowVersion}",
-            dbflow         : "com.github.Raizlabs.DBFlow:dbflow:${dbflowVersion}",
-            dbflowRx2      : "com.github.Raizlabs.DBFlow:dbflow-rx2:${dbflowVersion}",
-            utilcode       : "com.blankj:utilcodex:${utilcodeVersion}"
+//            rxjava         : "io.reactivex.rxjava2:rxjava:${rxjava2Version}",
+//            rxandroid      : "io.reactivex.rxjava2:rxandroid:${rxandroidVersion}",
+//            dagger         : "com.google.dagger:dagger:${daggerVersion}",
+//            daggerCompiler : "com.google.dagger:dagger-compiler:${daggerVersion}",
+//            logger         : "com.orhanobut:logger:${loggerVersion}",
+//            dbflowProcessor: "com.github.Raizlabs.DBFlow:dbflow-processor:${dbflowVersion}",
+//            dbflowCore     : "com.github.Raizlabs.DBFlow:dbflow-core:${dbflowVersion}",
+//            dbflow         : "com.github.Raizlabs.DBFlow:dbflow:${dbflowVersion}",
+//            dbflowRx2      : "com.github.Raizlabs.DBFlow:dbflow-rx2:${dbflowVersion}",
+            utilcode                     : "com.blankj:utilcodex:${utilcodeVersion}",
+            coreKtx                      : "androidx.core:core-ktx:${coreKtxVersion}",
+            appcompat                    : "androidx.appcompat:appcompat:${appcompatVersion}",
+            material                     : "com.google.android.material:material:${materialVersion}",
+            junit                        : "junit:junit:${junitVersion}",
+            junitExt                     : "androidx.test.ext:junit:${junitExtVersion}",
+            espresso                     : "androidx.test.espresso:espresso-core:${espressoVersion}",
+//            navigationFragment           : "androidx.navigation:navigation-fragment:${navigationFragmentVersion}",
+//            navigationUi                 : "androidx.navigation:navigation-ui:${navigationUiVersion}",
+//            lifecycleExtensions          : "androidx.lifecycle:lifecycle-extensions:${lifecycleExtensionsVersion}",
+//            navigationFragmentKtx        : "androidx.navigation:navigation-fragment-ktx:${navigationFragmentKtxVersion}",
+//            navigationUiKtx              : "androidx.navigation:navigation-ui-ktx:${navigationUiKtxVersion}",
+    ]
+
+    about = [
+            navigationFragment           : "androidx.navigation:navigation-fragment:${navigationFragmentVersion}",
+            navigationUi                 : "androidx.navigation:navigation-ui:${navigationUiVersion}",
+            lifecycleExtensions          : "androidx.lifecycle:lifecycle-extensions:${lifecycleExtensionsVersion}",
+            navigationFragmentKtx        : "androidx.navigation:navigation-fragment-ktx:${navigationFragmentKtxVersion}",
+            navigationUiKtx              : "androidx.navigation:navigation-ui-ktx:${navigationUiKtxVersion}",
+            coreKtx                      : "androidx.core:core-ktx:${coreKtxVersion}",
+            appcompat                    : "androidx.appcompat:appcompat:${appcompatVersion}",
+            material                     : "com.google.android.material:material:${materialVersion}",
+            junit                        : "junit:junit:${junitVersion}",
+            junitExt                     : "androidx.test.ext:junit:${junitExtVersion}",
+            espresso                     : "androidx.test.espresso:espresso-core:${espressoVersion}",
+            legacy                       : "androidx.legacy:legacy-support-v4:${legacyVersion}",
+            constraintlayout             : "androidx.constraintlayout:constraintlayout:${constraintlayoutVersion}",
     ]
 
 }
