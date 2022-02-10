@@ -1,19 +1,17 @@
-apply plugin: 'com.android.application'
-apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+}
 
 android {
     compileSdkVersion rootProject.ext.androidCompileSdkVersion
-    buildToolsVersion rootProject.ext.androidBuildToolsVersion
 
     defaultConfig {
-        applicationId rootProject.ext.androidApplicationId
         minSdkVersion rootProject.ext.androidMinSdkVersion
         targetSdkVersion rootProject.ext.androidTargetSdkVersion
-        versionCode rootProject.ext.androidAppVersionCode
-        versionName rootProject.ext.androidAppVersionName
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
@@ -29,13 +27,13 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildFeatures {
+        viewBinding true
+    }
 }
 
 dependencies {
-    def appDependence = rootProject.ext.app
-
-    implementation fileTree(dir: "libs", include: ["*.jar"])
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    def appDependence = rootProject.ext.dashboard
 
     implementation appDependence.navigationFragment
     implementation appDependence.navigationUi
@@ -45,14 +43,11 @@ dependencies {
     implementation appDependence.coreKtx
     implementation appDependence.appcompat
     implementation appDependence.material
-    implementation appDependence.constraintlayout
-    implementation appDependence.vectordrawable
     testImplementation appDependence.junit
     androidTestImplementation appDependence.junitExt
     androidTestImplementation appDependence.espresso
+    androidTestImplementation appDependence.legacy
+    implementation appDependence.constraintlayout
     implementation project(':ToolsFrame')
-    implementation project(':Home')
-    implementation project(':Dashboard')
-    implementation project(':Notifications')
-    implementation project(':About')
+
 }

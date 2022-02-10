@@ -9,7 +9,6 @@ import android.widget.TextView
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.base.about.R
-import com.base.baseapp.ui.dashboard.AboutViewModel
 
 
 class AboutFragment : Fragment() {

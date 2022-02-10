@@ -1,4 +1,7 @@
 include ':app'
 rootProject.name = "baseApp"
 include ':ToolsFrame'
+include ':Home'
+include ':Dashboard'
+include ':Notifications'
 include ':About'

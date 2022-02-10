@@ -113,4 +113,51 @@ ext {
             constraintlayout             : "androidx.constraintlayout:constraintlayout:${constraintlayoutVersion}",
     ]
 
+    dashboard = [
+            navigationFragment           : "androidx.navigation:navigation-fragment:${navigationFragmentVersion}",
+            navigationUi                 : "androidx.navigation:navigation-ui:${navigationUiVersion}",
+            lifecycleExtensions          : "androidx.lifecycle:lifecycle-extensions:${lifecycleExtensionsVersion}",
+            navigationFragmentKtx        : "androidx.navigation:navigation-fragment-ktx:${navigationFragmentKtxVersion}",
+            navigationUiKtx              : "androidx.navigation:navigation-ui-ktx:${navigationUiKtxVersion}",
+            coreKtx                      : "androidx.core:core-ktx:${coreKtxVersion}",
+            appcompat                    : "androidx.appcompat:appcompat:${appcompatVersion}",
+            material                     : "com.google.android.material:material:${materialVersion}",
+            junit                        : "junit:junit:${junitVersion}",
+            junitExt                     : "androidx.test.ext:junit:${junitExtVersion}",
+            espresso                     : "androidx.test.espresso:espresso-core:${espressoVersion}",
+            legacy                       : "androidx.legacy:legacy-support-v4:${legacyVersion}",
+            constraintlayout             : "androidx.constraintlayout:constraintlayout:${constraintlayoutVersion}",
+    ]
+
+    home = [
+            navigationFragment           : "androidx.navigation:navigation-fragment:${navigationFragmentVersion}",
+            navigationUi                 : "androidx.navigation:navigation-ui:${navigationUiVersion}",
+            lifecycleExtensions          : "androidx.lifecycle:lifecycle-extensions:${lifecycleExtensionsVersion}",
+            navigationFragmentKtx        : "androidx.navigation:navigation-fragment-ktx:${navigationFragmentKtxVersion}",
+            navigationUiKtx              : "androidx.navigation:navigation-ui-ktx:${navigationUiKtxVersion}",
+            coreKtx                      : "androidx.core:core-ktx:${coreKtxVersion}",
+            appcompat                    : "androidx.appcompat:appcompat:${appcompatVersion}",
+            material                     : "com.google.android.material:material:${materialVersion}",
+            junit                        : "junit:junit:${junitVersion}",
+            junitExt                     : "androidx.test.ext:junit:${junitExtVersion}",
+            espresso                     : "androidx.test.espresso:espresso-core:${espressoVersion}",
+            legacy                       : "androidx.legacy:legacy-support-v4:${legacyVersion}",
+            constraintlayout             : "androidx.constraintlayout:constraintlayout:${constraintlayoutVersion}",
+    ]
+
+    notifications = [
+            navigationFragment           : "androidx.navigation:navigation-fragment:${navigationFragmentVersion}",
+            navigationUi                 : "androidx.navigation:navigation-ui:${navigationUiVersion}",
+            lifecycleExtensions          : "androidx.lifecycle:lifecycle-extensions:${lifecycleExtensionsVersion}",
+            navigationFragmentKtx        : "androidx.navigation:navigation-fragment-ktx:${navigationFragmentKtxVersion}",
+            navigationUiKtx              : "androidx.navigation:navigation-ui-ktx:${navigationUiKtxVersion}",
+            coreKtx                      : "androidx.core:core-ktx:${coreKtxVersion}",
+            appcompat                    : "androidx.appcompat:appcompat:${appcompatVersion}",
+            material                     : "com.google.android.material:material:${materialVersion}",
+            junit                        : "junit:junit:${junitVersion}",
+            junitExt                     : "androidx.test.ext:junit:${junitExtVersion}",
+            espresso                     : "androidx.test.espresso:espresso-core:${espressoVersion}",
+            legacy                       : "androidx.legacy:legacy-support-v4:${legacyVersion}",
+            constraintlayout             : "androidx.constraintlayout:constraintlayout:${constraintlayoutVersion}",
+    ]
 }
