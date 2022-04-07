@@ -35,19 +35,12 @@ android {
 dependencies {
     def appDependence = rootProject.ext.dashboard
 
-    implementation appDependence.navigationFragment
-    implementation appDependence.navigationUi
     implementation appDependence.lifecycleExtensions
-    implementation appDependence.navigationFragmentKtx
-    implementation appDependence.navigationUiKtx
-    implementation appDependence.coreKtx
-    implementation appDependence.appcompat
-    implementation appDependence.material
     testImplementation appDependence.junit
     androidTestImplementation appDependence.junitExt
     androidTestImplementation appDependence.espresso
-    androidTestImplementation appDependence.legacy
     implementation appDependence.constraintlayout
-    implementation project(':ToolsFrame')
+
+    api project(':UI')
 
 }

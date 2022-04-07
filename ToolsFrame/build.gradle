@@ -33,9 +33,6 @@ dependencies {
     def appDependence = rootProject.ext.tools
 
     implementation appDependence.utilcode
-    implementation appDependence.coreKtx
-    implementation appDependence.appcompat
-    implementation appDependence.material
     testImplementation appDependence.junit
     androidTestImplementation appDependence.junitExt
     androidTestImplementation appDependence.espresso

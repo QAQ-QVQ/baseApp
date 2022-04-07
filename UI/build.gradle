@@ -33,14 +33,14 @@ android {
 }
 
 dependencies {
-    def appDependence = rootProject.ext.notifications
+    def appDependence = rootProject.ext.ui
 
-    implementation appDependence.lifecycleExtensions
-    implementation appDependence.constraintlayout
+    implementation appDependence.viewbinding
+    implementation appDependence.appcompat
+    implementation appDependence.material
 
     testImplementation appDependence.junit
     androidTestImplementation appDependence.junitExt
     androidTestImplementation appDependence.espresso
-
-    api project(':UI')
+    api project(":ToolsFrame")
 }

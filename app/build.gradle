@@ -29,6 +29,9 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildFeatures {
+        viewBinding true
+    }
 }
 
 dependencies {
@@ -37,22 +40,18 @@ dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 
-    implementation appDependence.navigationFragment
-    implementation appDependence.navigationUi
-    implementation appDependence.lifecycleExtensions
-    implementation appDependence.navigationFragmentKtx
     implementation appDependence.navigationUiKtx
-    implementation appDependence.coreKtx
-    implementation appDependence.appcompat
-    implementation appDependence.material
+    implementation appDependence.navigationFragmentKtx
     implementation appDependence.constraintlayout
-    implementation appDependence.vectordrawable
+
+//    implementation appDependence.vectordrawable
     testImplementation appDependence.junit
     androidTestImplementation appDependence.junitExt
     androidTestImplementation appDependence.espresso
-    implementation project(':ToolsFrame')
+
     implementation project(':Home')
     implementation project(':Dashboard')
     implementation project(':Notifications')
     implementation project(':About')
+    api project(':UI')
 }
