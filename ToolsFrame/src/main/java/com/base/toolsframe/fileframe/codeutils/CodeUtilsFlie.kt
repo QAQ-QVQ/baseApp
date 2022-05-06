@@ -1,11 +1,10 @@
 package com.base.toolsframe.fileframe.codeutils
 
-import android.util.Log
-import com.base.toolsframe.fileframe.FileObject
+import com.base.toolsframe.fileframe.api.IFileObject
 import com.blankj.utilcode.util.FileUtils
 import java.io.File
 
-class CodeUtilsFlie : FileObject {
+class CodeUtilsFlie : IFileObject {
 
     override fun getFileByPath(filePath: String):File {
        return FileUtils.getFileByPath(filePath)

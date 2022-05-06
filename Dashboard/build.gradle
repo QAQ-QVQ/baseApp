@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    compileSdkVersion rootProject.ext.androidCompileSdkVersion
+    compileSdkVersion rootProject.ext.versions.androidCompileSdkVersion
 
     defaultConfig {
-        minSdkVersion rootProject.ext.androidMinSdkVersion
-        targetSdkVersion rootProject.ext.androidTargetSdkVersion
+        minSdkVersion rootProject.ext.versions.androidMinSdkVersion
+        targetSdkVersion rootProject.ext.versions.androidTargetSdkVersion
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -33,7 +33,7 @@ android {
 }
 
 dependencies {
-    def appDependence = rootProject.ext.dashboard
+    def appDependence = rootProject.ext.app
 
     implementation appDependence.lifecycleExtensions
     testImplementation appDependence.junit
@@ -41,6 +41,6 @@ dependencies {
     androidTestImplementation appDependence.espresso
     implementation appDependence.constraintlayout
 
-    api project(':UI')
+    api project(':ToolsFrame')
 
 }

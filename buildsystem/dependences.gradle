@@ -1,90 +1,57 @@
 ext {
+    versions = [
+            //Android
+            androidBuildToolsVersion        : "30.0.2",
+            androidMinSdkVersion            : 18,
+            androidTargetSdkVersion         : 29,
+            androidCompileSdkVersion        : 29,
+            androidApplicationId            : "com.base.baseapp",
+            androidAppVersionCode           : 1,
+            androidAppVersionName           : "1.0",
 
-    //Android
-    androidBuildToolsVersion = "30.0.2"
-    androidMinSdkVersion = 18
-    androidTargetSdkVersion = 29
-    androidCompileSdkVersion = 29
-    androidApplicationId = "com.base.baseapp"
-    androidAppVersionCode = 1
-    androidAppVersionName = "1.0"
+            //Libraries
+            utilcodeVersion                 : "1.31.0",
+            navigationFragmentVersion       : "2.3.5",
+            navigationUiVersion             : "2.1.0",
+            lifecycleExtensionsVersion      : "2.2.0",
+            navigationFragmentKtxVersion    : "2.1.0",
+            navigationUiKtxVersion          : "2.1.0",
+            coreKtxVersion                  : "1.1.0",
+            appcompatVersion                : "1.2.0",
+            materialVersion                 : "1.0.0",
+            junitVersion                    : "4.12",
+            junitExtVersion                 : "1.0.0",
+            espressoVersion                 : "3.2.0",
+            legacyVersion                   : "1.0.0",
+            constraintlayoutVersion         : "2.0.4",
+            vectordrawableVersion           : "1.1.0",
+            viewbindingVersion              : "4.2.2",
+            retrofitVersion                 : "2.9.0",
+            lifecycleCommonVersion          : "2.3.1",
+            livedataCoreKtxVersion          : "2.3.1",
 
-    //Libraries
-    utilcodeVersion = "1.31.0"
-    navigationFragmentVersion = "2.3.5"
-    navigationUiVersion = "2.1.0"
-    lifecycleExtensionsVersion = "2.1.0"
-    navigationFragmentKtxVersion = "2.1.0"
-    navigationUiKtxVersion = "2.1.0"
-    coreKtxVersion = "1.1.0"
-    appcompatVersion = "1.2.0"
-    materialVersion = "1.0.0"
-    junitVersion = "4.12"
-    junitExtVersion = "1.0.0"
-    espressoVersion = "3.2.0"
-    legacyVersion = "1.0.0"
-    constraintlayoutVersion = "2.0.4"
-    vectordrawableVersion = "1.1.0"
-    viewbindingVersion = "4.2.2"
-
+    ]
+    
     app = [
-            navigationFragmentKtx: "androidx.navigation:navigation-fragment-ktx:${navigationFragmentKtxVersion}",
-            navigationUiKtx      : "androidx.navigation:navigation-ui-ktx:${navigationUiKtxVersion}",
-//            coreKtx              : "androidx.core:core-ktx:${coreKtxVersion}",
-            junit                : "junit:junit:${junitVersion}",
-            junitExt             : "androidx.test.ext:junit:${junitExtVersion}",
-            espresso             : "androidx.test.espresso:espresso-core:${espressoVersion}",
-            constraintlayout     : "androidx.constraintlayout:constraintlayout:${constraintlayoutVersion}",
-//            vectordrawable       : "androidx.vectordrawable:vectordrawable:${vectordrawableVersion}",
-    ]
-
-    ui = [
-            viewbinding          : "androidx.databinding:viewbinding:${viewbindingVersion}",
-            appcompat            : "androidx.appcompat:appcompat:${appcompatVersion}",
-            constraintlayout     : "androidx.constraintlayout:constraintlayout:${constraintlayoutVersion}",
-            material             : "com.google.android.material:material:${materialVersion}",
-            junit                : "junit:junit:${junitVersion}",
-            junitExt             : "androidx.test.ext:junit:${junitExtVersion}",
-            espresso             : "androidx.test.espresso:espresso-core:${espressoVersion}",
-            constraintlayout     : "androidx.constraintlayout:constraintlayout:${constraintlayoutVersion}",
-    ]
-
-    tools = [
-            utilcode : "com.blankj:utilcodex:${utilcodeVersion}",
-            junit    : "junit:junit:${junitVersion}",
-            junitExt : "androidx.test.ext:junit:${junitExtVersion}",
-            espresso : "androidx.test.espresso:espresso-core:${espressoVersion}",
-    ]
-
-    about = [
-            lifecycleExtensions  : "androidx.lifecycle:lifecycle-extensions:${lifecycleExtensionsVersion}",
-            junit                : "junit:junit:${junitVersion}",
-            junitExt             : "androidx.test.ext:junit:${junitExtVersion}",
-            espresso             : "androidx.test.espresso:espresso-core:${espressoVersion}",
-            constraintlayout     : "androidx.constraintlayout:constraintlayout:${constraintlayoutVersion}",
-    ]
-
-    dashboard = [
-            lifecycleExtensions  : "androidx.lifecycle:lifecycle-extensions:${lifecycleExtensionsVersion}",
-            junit                : "junit:junit:${junitVersion}",
-            junitExt             : "androidx.test.ext:junit:${junitExtVersion}",
-            espresso             : "androidx.test.espresso:espresso-core:${espressoVersion}",
-            constraintlayout     : "androidx.constraintlayout:constraintlayout:${constraintlayoutVersion}",
-    ]
-
-    home = [
-            lifecycleExtensions  : "androidx.lifecycle:lifecycle-extensions:${lifecycleExtensionsVersion}",
-            junit                : "junit:junit:${junitVersion}",
-            junitExt             : "androidx.test.ext:junit:${junitExtVersion}",
-            espresso             : "androidx.test.espresso:espresso-core:${espressoVersion}",
-            constraintlayout     : "androidx.constraintlayout:constraintlayout:${constraintlayoutVersion}",
-    ]
-
-    notifications = [
-            lifecycleExtensions  : "androidx.lifecycle:lifecycle-extensions:${lifecycleExtensionsVersion}",
-            junit                : "junit:junit:${junitVersion}",
-            junitExt             : "androidx.test.ext:junit:${junitExtVersion}",
-            espresso             : "androidx.test.espresso:espresso-core:${espressoVersion}",
-            constraintlayout     : "androidx.constraintlayout:constraintlayout:${constraintlayoutVersion}",
+            navigationFragmentKtx           : "androidx.navigation:navigation-fragment-ktx:${versions["navigationFragmentKtxVersion"]}",
+            navigationUiKtx                 : "androidx.navigation:navigation-ui-ktx:${versions["navigationUiKtxVersion"]}",
+//            coreKtx                         : "androidx.core:core-ktx:${versions["coreKtxVersion"]}",
+            junit                           : "junit:junit:${versions["junitVersion"]}",
+            junitExt                        : "androidx.test.ext:junit:${versions["junitExtVersion"]}",
+            espresso                        : "androidx.test.espresso:espresso-core:${versions["espressoVersion"]}",
+            constraintlayout                : "androidx.constraintlayout:constraintlayout:${versions["constraintlayoutVersion"]}",
+//            vectordrawable       : "androidx.vectordrawable:vectordrawable:${versions["vectordrawableVersion"]}",
+            viewbinding                     : "androidx.databinding:viewbinding:${versions["viewbindingVersion"]}",
+            appcompat                       : "androidx.appcompat:appcompat:${versions["appcompatVersion"]}",
+            constraintlayout                : "androidx.constraintlayout:constraintlayout:${versions["constraintlayoutVersion"]}",
+            material                        : "com.google.android.material:material:${versions["materialVersion"]}",
+            junit                           : "junit:junit:${versions["junitVersion"]}",
+            junitExt                        : "androidx.test.ext:junit:${versions["junitExtVersion"]}",
+            espresso                        : "androidx.test.espresso:espresso-core:${versions["espressoVersion"]}",
+            lifecycleExtensions             : "androidx.lifecycle:lifecycle-extensions:${versions["lifecycleExtensionsVersion"]}",
+            utilcode                        : "com.blankj:utilcodex:${versions["utilcodeVersion"]}",
+            retrofit                        : "com.squareup.retrofit2:retrofit:${versions["retrofitVersion"]}",
+            lifecycleCommon                 : "androidx.lifecycle:lifecycle-common:${versions["lifecycleCommonVersion"]}",
+            livedataCoreKtx                 : "androidx.lifecycle:lifecycle-livedata-core-ktx:${versions["livedataCoreKtxVersion"]}",
     ]
 }

@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    compileSdkVersion rootProject.ext.androidCompileSdkVersion
+    compileSdkVersion rootProject.ext.versions.androidCompileSdkVersion
 
     defaultConfig {
-        minSdkVersion rootProject.ext.androidMinSdkVersion
-        targetSdkVersion rootProject.ext.androidTargetSdkVersion
+        minSdkVersion rootProject.ext.versions.androidMinSdkVersion
+        targetSdkVersion rootProject.ext.versions.androidTargetSdkVersion
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -30,10 +30,15 @@ android {
 }
 
 dependencies {
-    def appDependence = rootProject.ext.tools
+    def appDependence = rootProject.ext.app
 
     implementation appDependence.utilcode
+    implementation appDependence.retrofit
+    implementation appDependence.lifecycleCommon
+    implementation appDependence.livedataCoreKtx
+
     testImplementation appDependence.junit
     androidTestImplementation appDependence.junitExt
     androidTestImplementation appDependence.espresso
+    api project(':UI')
 }

@@ -1,4 +1,4 @@
-package com.base.toolsframe.fileframe
+package com.base.toolsframe.fileframe.config
 
 enum class FileObjectConfig {
 

@@ -3,15 +3,15 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion rootProject.ext.androidCompileSdkVersion
-    buildToolsVersion rootProject.ext.androidBuildToolsVersion
+    compileSdkVersion rootProject.ext.versions.androidCompileSdkVersion
+    buildToolsVersion rootProject.ext.versions.androidBuildToolsVersion
 
     defaultConfig {
-        applicationId rootProject.ext.androidApplicationId
-        minSdkVersion rootProject.ext.androidMinSdkVersion
-        targetSdkVersion rootProject.ext.androidTargetSdkVersion
-        versionCode rootProject.ext.androidAppVersionCode
-        versionName rootProject.ext.androidAppVersionName
+        applicationId rootProject.ext.versions.androidApplicationId
+        minSdkVersion rootProject.ext.versions.androidMinSdkVersion
+        targetSdkVersion rootProject.ext.versions.androidTargetSdkVersion
+        versionCode rootProject.ext.versions.androidAppVersionCode
+        versionName rootProject.ext.versions.androidAppVersionName
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -49,9 +49,8 @@ dependencies {
     androidTestImplementation appDependence.junitExt
     androidTestImplementation appDependence.espresso
 
-    implementation project(':Home')
-    implementation project(':Dashboard')
-    implementation project(':Notifications')
-    implementation project(':About')
-    api project(':UI')
+    api project(':Home')
+    api project(':Dashboard')
+    api project(':Notifications')
+    api project(':About')
 }

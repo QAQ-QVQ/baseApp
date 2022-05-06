@@ -1,9 +1,9 @@
-package com.base.toolsframe.fileframe
+package com.base.toolsframe.fileframe.api
 
 import com.blankj.utilcode.util.FileUtils
 import java.io.File
 
-interface FileObject {
+interface IFileObject {
     /**
      * 根据文件路径获取文件
      * Return the file by path.
